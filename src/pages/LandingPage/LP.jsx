@@ -3,6 +3,8 @@ import Button from 'react-bootstrap/Button';
 import Hero from '../../components/Hero/Hero';
 import FAQs from '../../components/FAQs/FAQs';
 import Footer from '../../components/Footer/Footer';
+import Intro from '../../components/Intro/Intro';
+import Community from '../../components/Community/Community';
 
 export default function LP() {
   return (
@@ -11,13 +13,16 @@ export default function LP() {
       {/* Hero Section */}
       <Hero/>
 
-      {/* Take Away Section */}
+      {/* Intro Section */}
+      <Intro/>
 
       {/* Campus Leader video Section */}
 
       {/* Partners Section */}
 
       {/* Community Section */}
+
+      <Community/>
 
 
       {/* FAQs */}
