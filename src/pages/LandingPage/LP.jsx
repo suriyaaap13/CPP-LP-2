@@ -5,6 +5,7 @@ import FAQs from '../../components/FAQs/FAQs';
 import Footer from '../../components/Footer/Footer';
 import Intro from '../../components/Intro/Intro';
 import Community from '../../components/Community/Community';
+import Contact from '../../components/Contact/Contact';
 
 export default function LP() {
   return (
@@ -31,6 +32,7 @@ export default function LP() {
 
 
       {/* Contact Us */}
+      <Contact/>
 
 
       {/* Footer */}
