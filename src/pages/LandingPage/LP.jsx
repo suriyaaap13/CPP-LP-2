@@ -6,6 +6,7 @@ import Footer from '../../components/Footer/Footer';
 import Intro from '../../components/Intro/Intro';
 import Community from '../../components/Community/Community';
 import Contact from '../../components/Contact/Contact';
+import Features from '../../components/Features/Features';
 
 export default function LP() {
   return (
@@ -14,8 +15,8 @@ export default function LP() {
       {/* Hero Section */}
       <Hero/>
 
-      {/* Intro Section */}
-      <Intro/>
+      {/* Feactures Section */}
+      <Features/>
 
       {/* Campus Leader video Section */}
 
