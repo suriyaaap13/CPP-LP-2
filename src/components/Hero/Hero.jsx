@@ -55,7 +55,7 @@ export default function Hero() {
           {/* Buttons */}
           <div className='mt-3'>
             <Button variant='dark' className={`${Styles.create_chapter_btn} me-4`}>Create a chapter -&gt;</Button>
-            <Button variant='light' className={`${Styles.view_partners_btn}`}>View all partners</Button>
+            <Button variant='light' className={`${Styles.view_partners_btn}`}>Explore chapters</Button>
           </div>
         </div>
         {/* Flag Section */}

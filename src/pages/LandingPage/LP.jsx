@@ -7,6 +7,7 @@ import Intro from '../../components/Intro/Intro';
 import Community from '../../components/Community/Community';
 import Contact from '../../components/Contact/Contact';
 import Features from '../../components/Features/Features';
+import CampusLeader from '../../components/CampusLeader/CampusLeader';
 
 export default function LP() {
   return (
@@ -19,6 +20,7 @@ export default function LP() {
       <Features/>
 
       {/* Campus Leader video Section */}
+      <CampusLeader/>
 
       {/* Partners Section */}
 

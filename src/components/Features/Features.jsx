@@ -29,7 +29,7 @@ function Features() {
       <div className={`px-2 d-flex align-items-center justify-content-between`}>
         
         <div className={`ps-1 ms-1`}>
-          <div className={`${Styles.title}`}>Regular events to polish you up</div>
+          <div className={`${Styles.title}`}>Regular events <br/> to polish you up</div>
           <div className={`${Styles.sub_title}`}>Elevate your coding skills and succeed with Algozenith. Join us for regular seminars, <br/> contests, and Hackathons with industry experts. Plus, get goodies and swags for <br/> your hard work in a positive and competitive environment. Don't miss out on the <br/> opportunities Algozenith provides!</div>
         </div>
         <div className='pe-1 me-1'>

@@ -3,14 +3,14 @@
 }
 .title{
     font-family: Rubik;
+    font-size: 3.6rem;
     font-weight: 800;
-    font-size: 2.5rem;
     letter-spacing: -0.025em;
 }
 .sub_title{
     font-family: DM Sans;
+    font-size: 1.1rem;
     font-weight: 400;
-    font-size: 1rem;
     letter-spacing: -0.03em;
 }
 .sub_heading{
