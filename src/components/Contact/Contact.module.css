@@ -35,3 +35,31 @@
     font-weight: 400;
     font-size: 1.5rem;
 }
+.yellow_btn{
+    font-family: DM Sans;
+    width: 10rem;
+    background: linear-gradient(89.1deg, #FAE17E 1.56%, #FFFFFF 138.78%) !important;
+    border-radius: 8px;
+    padding: 10px 20px 10px 20px !important;
+    color: black !important;
+    letter-spacing: -0.03em;
+}
+.form_input{
+    font-family: DM Sans;
+    font-weight: 700;
+    font-size: 1.1rem;
+    letter-spacing: -0.03em;
+    padding: 12px 20px;
+    margin: 0.6rem 0rem;
+    background: linear-gradient(180deg, rgba(255, 238, 162, 0.54) 0%, rgba(255, 222, 75, 0.41) 100%);
+    border-radius: 10px !important;
+    outline: none !important;
+}
+.text_area{
+    min-height: 500px;
+    resize: none;
+}
+.form_divider{
+    border: 1px solid;
+    opacity: 0.3;
+}

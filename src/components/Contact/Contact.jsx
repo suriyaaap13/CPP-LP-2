@@ -4,8 +4,7 @@ import Form from 'react-bootstrap/Form';
 import Card from 'react-bootstrap/Card';
 import Image from 'react-bootstrap/Image';
 import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import Styles from './Contact.module.css';
 
 export default function Contact() {
@@ -14,12 +13,12 @@ export default function Contact() {
       <Container className={`d-flex p-5`}>
         
         {/* Become a Leader Section */}
-        <Card className={`${Styles.leader_card} p-3 shadow`}>
+        <Card className={`${Styles.leader_card} p-3 shadow  me-5`}>
           <Card.Body>
             
             {/* Title */}
-            <div className={`${Styles.title_nxt}`}>Become a</div>
-            <div className={`${Styles.title}`}>Chapter Leader!</div>
+            <h2 className={`${Styles.title_nxt}`}>Become a</h2>
+            <h1 className={`${Styles.title_nxt}`}>Chapter Leader!</h1>
             
             {/*  */}
             <div className={`${Styles.normal_txt} mt-1 mb-3`}>
@@ -28,12 +27,12 @@ export default function Contact() {
             </div>
 
             {/* Join Now Card */}
-            <div className={`${Styles.join_now_card} d-flex p-3 align-items-center`}>
+            <div className={`${Styles.join_now_card} d-flex p-2 align-items-center`}>
               <div className='border border-1 p-2 rounded-2 me-3'>
                 <Image
                   src='/img/flag.svg'
                   className={``}
-                  width={32}
+                  width={28}
                 />
               </div>
               <div>
@@ -48,7 +47,7 @@ export default function Contact() {
             {/*  */}
 
             <div className='d-flex justify-content-between'>
-              <div className={`border p-2 rounded-2 d-flex d-flex align-items-center shadow-sm`}>
+              <div className={`border p-2 rounded-2 me-2 d-flex d-flex align-items-center shadow-sm`}>
                 <div className='border border-1 p-2 rounded-2 me-2'>
                   <Image 
                     src='/img/az.svg'
@@ -59,7 +58,7 @@ export default function Contact() {
                 
                 <div className={`${Styles.normal_txt}`}><strong>AZ Premium&nbsp; -&gt;</strong></div>
               </div>
-              <div className={`border p-2 rounded-2 d-flex d-flex align-items-center shadow-sm`}>
+              <div className={`border p-2 rounded-2 ms-2 d-flex d-flex align-items-center shadow-sm`}>
                 <div className='border border-1 p-2 rounded-2 me-2'>
                   <Image 
                     src='/img/mock.svg'
@@ -76,32 +75,33 @@ export default function Contact() {
           </Card.Body>
         </Card>
 
+        <div className={`${Styles.form_divider}`}></div>
+
 
         {/* Contact Us Form */}
-        <div>
-          <div>Contact Us</div>
-          <Form>
+        <div className='ms-5'>
+          <h1 className={`${Styles.title}`}>Contact Us</h1>
+          <Form className='my-4'>
 
-            <Form.Group className="mb-3" controlId="formBasicEmail">
-              <Form.Label>Email address</Form.Label>
-              <Form.Control type="email" placeholder="Enter email" />
-              <Form.Text className="text-muted">
-                We'll never share your email with anyone else.
-              </Form.Text>
-            </Form.Group>
+            <Form.Control className={`${Styles.form_input} my-2 shadow-sm`} type="text" value={'Kushal Khandelwal'} placeholder="Name*" />
+            <div className='d-flex my-1'>
+              <Form.Control className={`${Styles.form_input} my-2 me-2 shadow-sm`} type="email" placeholder="E-mail*" />
+              <Form.Control className={`${Styles.form_input} my-2 shadow-sm`} type="text" placeholder="Mobile" />
+            </div>
+            <Form.Control className={`${Styles.form_input} my-2 shadow-sm`} type="text" placeholder="Subject*" />
 
-            <Form.Group className="mb-3" controlId="formBasicPassword">
-              <Form.Label>Password</Form.Label>
-              <Form.Control type="password" placeholder="Password" />
-            </Form.Group>
-            
-            <Form.Group className="mb-3" controlId="formBasicCheckbox">
-              <Form.Check type="checkbox" label="Check me out" />
-            </Form.Group>
+            <FloatingLabel className={`my-2`} controlId="floatingTextarea2" label="Description*">
+              <Form.Control
+                as="textarea"
+                placeholder="Description*"
+                className={`${Styles.form_input} ${Styles.text_area} shadow-sm`}
+                style={{ height: '100px' }}
+              />
+            </FloatingLabel>
 
-            <Button variant="primary" type="submit">
-              Submit
-            </Button>
+            <div className={`d-flex justify-content-end my-2`}>
+              <Button variant='light' className={`${Styles.yellow_btn} shadow-sm`}>Submit</Button>
+            </div>
 
           </Form>
         </div>
