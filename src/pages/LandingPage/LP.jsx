@@ -11,7 +11,7 @@ import CampusLeader from '../../components/CampusLeader/CampusLeader';
 
 export default function LP() {
   return (
-    <div>
+    <div className='overflow-hidden'>
       
       {/* Hero Section */}
       <Hero/>
