@@ -7,7 +7,7 @@ import Styles from './CampusLeader.module.css';
 
 export default function CampusLeader() {
   return (
-    <div className='pb-5 mb-3'>
+    <div className='pb-5'>
       <Container className={`text-center`}>
           <h1 className={`${Styles.title} py-1 fs-1`}>Together, We Code Better</h1>
           <h6 className={`${Styles.sub_title} py-1 fs-6`}>Believe in yourself and all that you are. Know that there is something inside you that is greater than any obstacle.</h6>
