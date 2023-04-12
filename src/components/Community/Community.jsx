@@ -49,7 +49,12 @@ export default function Community() {
                     <div className={`${Styles.sub_heading}`}>Events organized</div>
                 </div>
             </div>
-            <Button className={`${Styles.create_chapter_btn} mt-3`}>Create a chapter -&gt;</Button>
+            <Button variant='bg-light' className={`${Styles.create_chapter_btn} mt-3`}>Create a chapter -&gt;</Button>
+
+            {/* Horizontal Scroll Images */}
+            <div>
+                
+            </div>
         </div>
     </div>
   )

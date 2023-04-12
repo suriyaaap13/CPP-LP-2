@@ -10,8 +10,6 @@ import Button from 'react-bootstrap/Button';
 export default function Hero() {
   return (
     <div className={`${Styles.hero_bg} pt-3`}>
-      
-
 
       {/* Navbar */}
       <Navbar expand='md'>
@@ -35,7 +33,7 @@ export default function Hero() {
       </Navbar>
 
       {/* Hero Section */}
-      <div className='d-md-flex container justify-content-between'>
+      <Container className='d-md-flex text-center text-md-start justify-content-between'>
         {/* Text Section */}
         <div className='py-5 my-3 text-md-left'>
           {/* Hero text */}
@@ -53,19 +51,21 @@ export default function Hero() {
           The <strong>AlgoZenith Campus Connection Program</strong> is designed to help <br/> students establish a community of like-minded individuals on their <br/> campus who are passionate about programming and technology.
           </div>
           {/* Buttons */}
-          <div className='mt-3'>
-            <Button variant='dark' className={`${Styles.create_chapter_btn} me-4 `}>Create a chapter -&gt;</Button>
+          <div className='mt-3 d-grid gap-2 d-md-flex'>
+            <Button variant='dark' className={`${Styles.create_chapter_btn} `}>Create a chapter -&gt;</Button>
             <Button variant='light' className={`${Styles.yellow_btn} `}>Explore chapters</Button>
           </div>
         </div>
         {/* Flag Section */}
-        <div>
+        <div className=''>
           <Image
             src='/img/Hero/flag_alone.png'
             height={500}
           />
         </div>
-      </div>
+      </Container>
+
+
     </div>
   )
 }
