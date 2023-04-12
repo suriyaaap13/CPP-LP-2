@@ -10,7 +10,7 @@ function Features() {
     <Container className={`py-5`}>
       
       {/* Curriculum */}
-      <div className={`px-2 d-flex align-items-center justify-content-between`}>
+      <div className={`px-2 d-md-flex align-items-center justify-content-between text-center`}>
         <div className={`ps-2`}>
           <Image
             src='/img/Features/curriculum.png'
@@ -26,7 +26,7 @@ function Features() {
       </div>
       
       {/* Events */}
-      <div className={`px-2 d-flex align-items-center justify-content-between`}>
+      <div className={`px-2 d-md-flex align-items-center justify-content-between`}>
         
         <div className={`ps-1 ms-1`}>
           <div className={`${Styles.title}`}>Regular events <br/> to polish you up</div>
@@ -42,7 +42,7 @@ function Features() {
       </div>
       
       {/* Rewards */}
-      <div className={`px-2 d-flex align-items-center justify-content-between`}>
+      <div className={`px-2 d-md-flex align-items-center justify-content-between`}>
         <div className={`ps-1`}>
           <Image
             src='/img/Features/rewards.png'

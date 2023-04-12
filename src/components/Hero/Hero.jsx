@@ -14,7 +14,7 @@ export default function Hero() {
 
 
       {/* Navbar */}
-      <Navbar expand='lg'>
+      <Navbar expand='md'>
         <Container>
           <Navbar.Brand href='#'>
             <Image
@@ -35,9 +35,9 @@ export default function Hero() {
       </Navbar>
 
       {/* Hero Section */}
-      <div className='d-flex container justify-content-between'>
+      <div className='d-md-flex container justify-content-between'>
         {/* Text Section */}
-        <div className='py-5 my-3'>
+        <div className='py-5 my-3 text-md-left'>
           {/* Hero text */}
           <div className={`${Styles.hero_text}`}>
             <span>We l</span>
@@ -54,8 +54,8 @@ export default function Hero() {
           </div>
           {/* Buttons */}
           <div className='mt-3'>
-            <Button variant='dark' className={`${Styles.create_chapter_btn} me-4`}>Create a chapter -&gt;</Button>
-            <Button variant='light' className={`${Styles.yellow_btn}`}>Explore chapters</Button>
+            <Button variant='dark' className={`${Styles.create_chapter_btn} me-4 `}>Create a chapter -&gt;</Button>
+            <Button variant='light' className={`${Styles.yellow_btn} `}>Explore chapters</Button>
           </div>
         </div>
         {/* Flag Section */}
