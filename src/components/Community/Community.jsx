@@ -1,15 +1,17 @@
 import React from 'react';
 import Styles from './Community.module.css';
-import { Button, Image } from 'react-bootstrap';
+import Button from 'react-bootstrap/Button';
+import Image from 'react-bootstrap/Image';
+import Container from 'react-bootstrap/Container';
 
 export default function Community() {
   return (
     <div>
         <div className={`${Styles.page_gradient}`}>
             <div className={`${Styles.title} text-center pt-4 fs-1`}>Our Partners</div>
-            <div className={`${Styles.sub_title} text-center pt-4 fs-6`}>At AlgoZenith, we believe in the power of community and collaboration. Through our partnerships, we have had the opportunity to organize and <br/> participate in various technical events, which have enabled students & professionals to come together, learn, collaborate, & showcase their skills.</div>
+            <Container className={`${Styles.sub_title} text-center pt-2 fs-6`}>At AlgoZenith, we believe in the power of community and collaboration. Through our partnerships, we have had the opportunity to organize and participate in various technical events, which have enabled students & professionals to come together, learn, collaborate, & showcase their skills.</Container>
             {/* Buttons */}
-            <div className='text-center mt-5'>
+            <div className='mt-4 text-center'>
                 <Button variant='dark' className={`${Styles.create_chapter_btn} me-4`}>Create a chapter -&gt;</Button>
                 <Button variant='light' className={`${Styles.view_partners_btn}`}>View all partners</Button>
             </div>
@@ -30,8 +32,8 @@ export default function Community() {
             </h1>
 
             {/* Heading */}
-            <div className={`${Styles.sub_title} mt-3 fs-6`}>
-            Browse through the gallery to see images of coding competitions, workshops, guest lectures, & other events organized by different chapters <br/> across different campuses, and create one for your university as well!
+            <div className={`${Styles.sub_title} mt-3 fs-6 px-md-5 mx-md-5`}>
+            Browse through the gallery to see images of coding competitions, workshops, guest lectures, & other events organized by different chapters across different campuses, and create one for your university as well!
             </div>
 
             {/* Stats */}
@@ -59,10 +61,12 @@ export default function Community() {
 
             
             
-            {/* Horizontal Scroll Images */}
-            <div>
+            
+        </div>
+
+        {/* Horizontal Scroll Images */}
+        <div>
                 
-            </div>
         </div>
     </div>
   )

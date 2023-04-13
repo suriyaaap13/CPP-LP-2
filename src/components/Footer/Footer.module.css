@@ -1,0 +1,26 @@
+.title{
+    font-family: Rubik;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+}
+.blue_title{
+    background: linear-gradient(180deg, #3F6FC1 0%, #05445E 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}   
+.normal_txt{
+    font-family: DM Sans;
+    letter-spacing: -0.03em;
+}
+.submit_btn{
+    border-radius: 0 !important;
+    background: linear-gradient(94.24deg, #033042 -0.03%, #005C83 99.97%);
+    border-radius: 0px 8px 8px 0px;
+    padding: 8px 32px 8px 32px;
+}
+.input_bar{
+    border-radius: 0 !important;
+}
+.divider{
+    border: 1px solid #000000;
+}
