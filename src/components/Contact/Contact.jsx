@@ -4,6 +4,8 @@ import Form from 'react-bootstrap/Form';
 import Card from 'react-bootstrap/Card';
 import Image from 'react-bootstrap/Image';
 import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import Styles from './Contact.module.css';
 
@@ -13,61 +15,85 @@ export default function Contact() {
       <Container className={`d-flex p-5`}>
         
         {/* Become a Leader Section */}
-        <Card className={`${Styles.leader_card} p-3 shadow  me-5`}>
+        <Card className={`${Styles.leader_card} p-3 shadow  me-md-5`}>
           <Card.Body>
             
             {/* Title */}
-            <h2 className={`${Styles.title_nxt}`}>Become a</h2>
-            <h1 className={`${Styles.title_nxt}`}>Chapter Leader!</h1>
+            <h2 className={`${Styles.title} fs-2`}>Become a</h2>
+            <h1 className={`${Styles.title} fs-1`}>Chapter Leader!</h1>
             
-            {/*  */}
-            <div className={`${Styles.normal_txt} mt-1 mb-3`}>
+            {/* Description */}
+            <div className={`${Styles.normal_txt} my-3 mb-3 fs-6`}>
               Join the elite group of chapter leads today,<br/>
               for a tech-savvy tomorrow awaits you.
             </div>
 
             {/* Join Now Card */}
-            <div className={`${Styles.join_now_card} d-flex p-2 align-items-center`}>
+            <div className={`${Styles.join_now_card} d-flex p-4 align-items-center`}>
               <div className='border border-1 p-2 rounded-2 me-3'>
                 <Image
                   src='/img/flag.svg'
                   className={``}
-                  width={28}
+                  width={38}
                 />
               </div>
               <div>
-                <div className={`${Styles.join_card_title}`}>Join Now!</div>
-                <div className={`${Styles.normal_txt}`}>Fill in the form & lead a college chapter!</div>
+                <div className={`${Styles.normal_txt} fs-3`}><strong>Join Now!</strong></div>
+                <div className={`${Styles.normal_txt} fs-6`}>Fill in the form & lead a college chapter!</div>
               </div>
             </div>
 
             {/*  */}
-            <div className={`my-2 ${Styles.normal_txt}`}><strong>Couldn’t find what you wanted? Check these out!</strong></div>
+            <div className={`my-3 ${Styles.normal_txt}`}><strong>Couldn’t find what you wanted? Check these out!</strong></div>
             
             {/*  */}
 
-            <div className='d-flex justify-content-between'>
-              <div className={`border p-2 rounded-2 me-2 d-flex d-flex align-items-center shadow-sm`}>
-                <div className='border border-1 p-2 rounded-2 me-2'>
-                  <Image 
-                    src='/img/az.svg'
-                    className=''
-                    width={28}
-                  />
-                </div>
+            <div className='d-grid'>
+              <Row>
                 
-                <div className={`${Styles.normal_txt}`}><strong>AZ Premium&nbsp; -&gt;</strong></div>
-              </div>
-              <div className={`border p-2 rounded-2 ms-2 d-flex d-flex align-items-center shadow-sm`}>
-                <div className='border border-1 p-2 rounded-2 me-2'>
-                  <Image 
-                    src='/img/mock.svg'
-                    width={28}
-                  />
-                </div>
+                <Col xs={6}>
+                  <div className={`border p-2 rounded-2 d-flex align-items-center shadow-sm`}>
+                    
+                    {/* Logo Card */}
+                    <div className='border border-1 p-2 rounded-2 me-2'>
+                      <Image 
+                        src='/img/az.svg'
+                        className=''
+                        width={25}
+                      />
+                    </div>
+                    
+                    {/* Title and Sub-Title of the Card */}
+                    <div >
+                      <Image
+                        src='/img/Contact/AZPremium.svg'
+                        width={100}
+                      />
+                    </div>
+                  </div>
+                </Col>
                 
-                <div className={`${Styles.normal_txt}`}><strong>Mock Tests&nbsp; -&gt;</strong></div>
-              </div>
+                <Col xs={6}>
+                  <div className={`border p-2 rounded-2 d-flex align-items-center shadow-sm`}>
+                    <div className='border border-1 p-2 rounded-2 me-2'>
+                      <Image 
+                        src='/img/mock.svg'
+                        width={25}
+                      />
+                    </div>
+                    
+                    {/* <div className={`${Styles.normal_txt}`}><strong>Mock Tests&nbsp; -&gt;</strong></div> */}
+                    {/* Title and Sub-Title of the Card */}
+                    <div >
+                      <Image
+                        src='/img/Contact/MockTest.svg'
+                        width={100}
+                      />
+                    </div>
+                  </div>
+                </Col>
+              
+              </Row>
             </div>
            
             
@@ -75,11 +101,11 @@ export default function Contact() {
           </Card.Body>
         </Card>
 
-        <div className={`${Styles.form_divider}`}></div>
+        <div className={`${Styles.form_divider} d-none`}></div>
 
 
         {/* Contact Us Form */}
-        <div className='ms-5'>
+        <div className='ms-5 d-none d-md-block'>
           <h1 className={`${Styles.title}`}>Contact Us</h1>
           <Form className='my-4'>
 
