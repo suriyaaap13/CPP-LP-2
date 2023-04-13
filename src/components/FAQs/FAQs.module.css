@@ -4,24 +4,29 @@
     letter-spacing: -0.025em;
 }
 .acc_item{
-    /* border: 1px solid #000000 !important; */
-    border-radius: 0 !important;
-    border: 0 !important;
+    border: 0px !important;
+    border-radius: 0px !important;
+    background: transparent !important;
+    outline: none !important;
 }
 .acc_header{
-    font-family: DM Sans;
-    font-weight: 700;
-    font-size: 1.625rem !important;
-    letter-spacing: -0.03em;
+    background: #FFFFFF !important;
+    border-radius: 16px !important;
+    box-shadow: 3px 4px 14px rgba(251, 231, 144, 0.4) !important;
 }
 .acc_header button{
-    /* border: transparent; */
-    /* background-color: transparent;
-    box-shadow: none; */
+    background-color: transparent !important;
+    box-shadow: none !important;
+    font-family: DM Sans !important;
+    color: #000000 !important;
+    font-weight: 500;
+    letter-spacing: -0.03em !important;
 }
 .acc_body{
     font-family: DM Sans;
     font-weight: 400;
-    font-size: 1.1rem;
+    background-color: transparent !important;
+    font-size: 0.88rem;
+    border: 0 !important;
     color: #000000;
 }
