@@ -3,7 +3,6 @@ import Styles from './Hero.module.css';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import Image from 'react-bootstrap/Image';
 import Button from 'react-bootstrap/Button';
 
@@ -52,8 +51,8 @@ export default function Hero() {
           </div>
           {/* Buttons */}
           <div className='mt-3 d-grid gap-2 d-md-flex'>
-            <Button variant='dark' className={`${Styles.create_chapter_btn} `}>Create a chapter -&gt;</Button>
-            <Button variant='light' className={`${Styles.yellow_btn} `}>Explore chapters</Button>
+            <Button variant='light' className={`${Styles.dark_btn} fs-6`}>Create a chapter -&gt;</Button>
+            <Button variant='light' className={`${Styles.yellow_btn} fs-6`}>Explore chapters</Button>
           </div>
         </div>
         {/* Flag Section */}

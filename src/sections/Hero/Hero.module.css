@@ -14,10 +14,9 @@
     font-weight: 800;
     font-size: 3.2rem;
 }
-.create_chapter_btn{
+.dark_btn{
     font-family: Inter;
     font-weight: 700;
-    font-size: 1.37rem;
     letter-spacing: -0.03em;
     padding: 10px 20px 10px 20px !important;
     background: linear-gradient(94.24deg, #000000 -0.03%, #383838 99.97%),

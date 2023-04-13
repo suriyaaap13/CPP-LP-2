@@ -12,13 +12,14 @@
     font-family: DM Sans;
     letter-spacing: -0.03em;
 }
+.small_txt{
+    font-family: DM Sans;
+    font-size: 0.8rem;
+    letter-spacing: -0.03em;
+}
 .join_now_card{
     background: linear-gradient(180deg, rgba(251, 229, 135, 0.4) 0%, rgba(242, 206, 49, 0.7) 135%);
     border-radius: 12px;
-}
-.join_card_txt{
-    font-family: DM Sans;
-    letter-spacing: -0.03em;
 }
 .yellow_btn{
     font-family: DM Sans;

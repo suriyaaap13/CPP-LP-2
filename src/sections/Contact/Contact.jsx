@@ -29,17 +29,16 @@ export default function Contact() {
             </div>
 
             {/* Join Now Card */}
-            <div className={`${Styles.join_now_card} d-flex p-4 align-items-center`}>
+            <div className={`${Styles.join_now_card} d-flex p-3 align-items-center`}>
               <div className='border border-1 p-2 rounded-2 me-3'>
                 <Image
-                  src='/img/flag.svg'
-                  className={``}
+                  src='/img/Contact/flag.svg'
                   width={38}
                 />
               </div>
               <div>
-                <div className={`${Styles.normal_txt} fs-3`}><strong>Join Now!</strong></div>
-                <div className={`${Styles.normal_txt} fs-6`}>Fill in the form & lead a college chapter!</div>
+                <div className={`${Styles.normal_txt} fs-4`}><strong>Join Now!</strong></div>
+                <div className={`${Styles.small_txt}`}>Fill in the form & lead a college chapter!</div>
               </div>
             </div>
 
@@ -101,7 +100,7 @@ export default function Contact() {
           </Card.Body>
         </Card>
 
-        <div className={`${Styles.form_divider} d-none`}></div>
+        <div className={`${Styles.form_divider} d-none d-md-inline-block`}></div>
 
 
         {/* Contact Us Form */}

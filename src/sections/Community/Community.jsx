@@ -12,8 +12,8 @@ export default function Community() {
             <Container className={`${Styles.sub_title} text-center pt-2 fs-6`}>At AlgoZenith, we believe in the power of community and collaboration. Through our partnerships, we have had the opportunity to organize and participate in various technical events, which have enabled students & professionals to come together, learn, collaborate, & showcase their skills.</Container>
             {/* Buttons */}
             <div className='mt-4 text-center'>
-                <Button variant='dark' className={`${Styles.create_chapter_btn} me-4`}>Create a chapter -&gt;</Button>
-                <Button variant='light' className={`${Styles.view_partners_btn}`}>View all partners</Button>
+                <Button variant='dark' className={`${Styles.dark_btn} me-4 fs-6`}>Create a chapter -&gt;</Button>
+                <Button variant='light' className={`${Styles.yellow_btn} fs-6`}>View all partners</Button>
             </div>
             {/* Images */}
             <div className={`${Styles.fade_img_container}`}>
@@ -57,7 +57,7 @@ export default function Community() {
             </div>
             
             
-            <Button variant='bg-light' className={`${Styles.create_chapter_btn} mt-3`}>Create a chapter -&gt;</Button>
+            <Button variant='bg-light' className={`${Styles.dark_btn} mt-3 fs-6`}>Create a chapter -&gt;</Button>
 
             
             

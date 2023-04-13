@@ -1,13 +1,11 @@
 import React from 'react';
-import Button from 'react-bootstrap/Button';
-import Hero from '../../components/Hero/Hero';
-import FAQs from '../../components/FAQs/FAQs';
-import Footer from '../../components/Footer/Footer';
-import Intro from '../../components/Intro/Intro';
-import Community from '../../components/Community/Community';
-import Contact from '../../components/Contact/Contact';
-import Features from '../../components/Features/Features';
-import CampusLeader from '../../components/CampusLeader/CampusLeader';
+import Hero from '../../sections/Hero/Hero';
+import FAQs from '../../sections/FAQs/FAQs';
+import Footer from '../../sections/Footer/Footer';
+import Community from '../../sections/Community/Community';
+import Contact from '../../sections/Contact/Contact';
+import Features from '../../sections/Features/Features';
+import CampusLeader from '../../sections/CampusLeader/CampusLeader';
 
 export default function LP() {
   return (

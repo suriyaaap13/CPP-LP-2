@@ -20,10 +20,9 @@
     color: #383838;
 
 }
-.create_chapter_btn{
+.dark_btn{
     font-family: Inter;
     font-weight: 700;
-    font-size: 1.37rem;
     letter-spacing: -0.03em;
     padding: 10px 20px 10px 20px !important;
     background: linear-gradient(94.24deg, #000000 -0.03%, #383838 99.97%),
@@ -31,7 +30,7 @@
     letter-spacing: -0.03em;
     color: #FFFFFF !important;
 }
-.view_partners_btn{
+.yellow_btn{
     font-family: DM Sans;
     background: linear-gradient(89.1deg, #FAE17E 1.56%, #FFFFFF 138.78%) !important;
     border-radius: 8px;
