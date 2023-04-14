@@ -3,6 +3,8 @@ import Styles from './Community.module.css';
 import Button from 'react-bootstrap/Button';
 import Image from 'react-bootstrap/Image';
 import Container from 'react-bootstrap/Container';
+import DarkBtn from '../../components/DarkBtn/DarkBtn';
+import YellowBtn from '../../components/YellowBtn/YellowBtn';
 
 export default function Community() {
   return (
@@ -11,9 +13,13 @@ export default function Community() {
             <div className={`${Styles.title} text-center pt-4 fs-1`}>Our Partners</div>
             <Container className={`${Styles.sub_title} text-center pt-2 fs-6`}>At AlgoZenith, we believe in the power of community and collaboration. Through our partnerships, we have had the opportunity to organize and participate in various technical events, which have enabled students & professionals to come together, learn, collaborate, & showcase their skills.</Container>
             {/* Buttons */}
-            <div className='mt-4 text-center'>
-                <Button variant='dark' className={`${Styles.dark_btn} me-4 fs-6`}>Create a chapter -&gt;</Button>
-                <Button variant='light' className={`${Styles.yellow_btn} fs-6`}>View all partners</Button>
+            <div className='mt-4 d-flex justify-content-center align-items-center'>
+                
+                <div className='me-3'>
+                    <DarkBtn/>
+                </div>
+                
+                <YellowBtn/>
             </div>
             {/* Images */}
             <div className={`${Styles.fade_img_container}`}>
@@ -57,8 +63,10 @@ export default function Community() {
             </div>
             
             
-            <Button variant='bg-light' className={`${Styles.dark_btn} mt-3 fs-6`}>Create a chapter -&gt;</Button>
-
+            {/* <Button variant='bg-light' className={`${Styles.dark_btn} mt-3 fs-6`}>Create a chapter -&gt;</Button> */}
+            <div className='d-flex justify-content-center align-items-center'>
+            <DarkBtn/>
+            </div>
             
             
             

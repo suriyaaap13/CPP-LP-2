@@ -1,10 +1,13 @@
 import React from 'react';
-import Styles from './Hero.module.css';
+// import { FiArrowRight } from "react-icons/fi";
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Image from 'react-bootstrap/Image';
 import Button from 'react-bootstrap/Button';
+import Styles from './Hero.module.css';
+import DarkBtn from '../../components/DarkBtn/DarkBtn';
+import YellowBtn from '../../components/YellowBtn/YellowBtn';
 
 export default function Hero() {
   return (
@@ -14,19 +17,19 @@ export default function Hero() {
       <Navbar expand='md'>
         <Container>
           <Navbar.Brand href='#'>
-            <Image
+              <Image
               src='/img/Hero/az-logo-black.svg'
               width={150}
               className='img-fluid'
-            />
+              />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls='az-navbar' />
           <Navbar.Collapse id='az-navbar'>
-            <Nav className={`${Styles.nav_links} ms-auto`}>
+              <Nav className={`${Styles.nav_links} ms-auto`}>
               <Nav.Link href='#'>Lead Login</Nav.Link>
               <Nav.Link href='#'>Student Login</Nav.Link>
               <Nav.Link href='#'>Premium</Nav.Link>
-            </Nav>
+              </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
@@ -36,23 +39,24 @@ export default function Hero() {
         {/* Text Section */}
         <div className='py-5 my-3 text-md-left'>
           {/* Hero text */}
-          <div className={`${Styles.hero_text}`}>
+          <h1 className={`${Styles.hero_text}`}>
             <span>We l</span>
             <span>
               <Image
                 src='/img/Hero/heart.svg'
+                width={30}
               />ve
             </span>
-            <p>Coding</p>
-          </div>
+            <p>coding</p>
+          </h1>
           {/* Hero SubText */}
-          <div>
-          The <strong>AlgoZenith Campus Connection Program</strong> is designed to help <br/> students establish a community of like-minded individuals on their <br/> campus who are passionate about programming and technology.
+          <div className={`${Styles.box} py-3`}>
+          The <strong>AlgoZenith Campus Connection Program</strong> is designed to help students establish a community of like-minded individuals on their campus who are passionate about programming and technology.
           </div>
           {/* Buttons */}
           <div className='mt-3 d-grid gap-2 d-md-flex'>
-            <Button variant='light' className={`${Styles.dark_btn} fs-6`}>Create a chapter -&gt;</Button>
-            <Button variant='light' className={`${Styles.yellow_btn} fs-6`}>Explore chapters</Button>
+            <DarkBtn/>
+            <YellowBtn/>
           </div>
         </div>
         {/* Flag Section */}
@@ -63,7 +67,6 @@ export default function Hero() {
           />
         </div>
       </Container>
-
 
     </div>
   )

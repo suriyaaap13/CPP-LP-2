@@ -12,23 +12,10 @@
 .hero_text{
     font-family: Rubik;
     font-weight: 800;
-    font-size: 3.2rem;
+    font-size: 3rem;
 }
-.dark_btn{
-    font-family: Inter;
-    font-weight: 700;
-    letter-spacing: -0.03em;
-    padding: 10px 20px 10px 20px !important;
-    background: linear-gradient(94.24deg, #000000 -0.03%, #383838 99.97%),
-    linear-gradient(94.05deg, #FFFFFF -161.35%, rgba(255, 255, 255, 0) 99.97%);
-    letter-spacing: -0.03em;
-    color: #FFFFFF !important;
-}
-.yellow_btn{
-    font-family: DM Sans;
-    background: linear-gradient(89.1deg, #FAE17E 1.56%, #FFFFFF 138.78%) !important;
-    border-radius: 8px;
-    padding: 10px 20px 10px 20px !important;
-    color: black !important;
-    letter-spacing: -0.03em;
-}
+@media only screen and (min-width: 768px) {
+    .box{
+        inline-size: 33rem;
+    }
+}   

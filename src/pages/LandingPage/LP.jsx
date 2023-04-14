@@ -8,6 +8,7 @@ import Features from '../../sections/Features/Features';
 import CampusLeader from '../../sections/CampusLeader/CampusLeader';
 
 export default function LP() {
+
   return (
     <div className='overflow-hidden'>
       
@@ -34,6 +35,9 @@ export default function LP() {
 
       {/* Contact Us */}
       <Contact/>
+
+      
+      
 
 
       {/* Footer */}

@@ -1,0 +1,9 @@
+.dark_btn{
+    font-family: Inter;
+    font-weight: 700;
+    padding: 10px 20px 10px 20px !important;
+    background: linear-gradient(94.24deg, #000000 -0.03%, #383838 99.97%),
+    linear-gradient(94.05deg, #FFFFFF -161.35%, rgba(255, 255, 255, 0) 99.97%);
+    letter-spacing: -0.03em;
+    color: #FFFFFF !important;
+}

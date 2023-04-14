@@ -1,0 +1,8 @@
+.yellow_btn{
+    font-family: DM Sans;
+    background: linear-gradient(89.1deg, #FAE17E 1.56%, #FFFFFF 138.78%) !important;
+    border-radius: 8px;
+    padding: 10px 20px 10px 20px !important;
+    color: black !important;
+    letter-spacing: -0.03em;
+}
